@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Frontend session plugin for setting store code based on IP -->
+    <!-- Frontend area only because we don't need this for admin area -->
+    <type name="Magento\Framework\Session\SessionManager">
+        <plugin name="yourcompany_yourmodule_session_sessionmanagerplugin" type="YourCompany\YourModule\Plugin\Session\SessionManagerPlugin" sortOrder="1"/>
+    </type>
+
+</config>
